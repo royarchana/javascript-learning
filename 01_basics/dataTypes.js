@@ -39,9 +39,9 @@ const bigNumber = 123456789n
  //its datatypes is always object
 
 const heros =["shaktiman","ironman"] // Array
-{
+let myObj ={
   name : "archana",
-  age 18,
+  myAge : 18 ,
 }                       // object
 
 const myFunction = function(){
