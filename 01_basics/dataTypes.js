@@ -39,13 +39,14 @@ const bigNumber = 123456789n
  //its datatypes is always object
 
 const heros =["shaktiman","ironman"] // Array
-let myObj ={
-  name : "archana",
-  myAge : 18 ,
+
+let myObj = {
+  user : "archana",
+  userage : 18 ,
 }                       // object
 
 const myFunction = function(){
-console.log( "hello")
+   console.log("hello")
 }
 
 //***********************************************//
@@ -62,8 +63,8 @@ console.log( "hello")
 
  //example of heap
  let userOne ={
-    email="user@gmai.com",
-    upi="user@ybl"
+    email : "user@gmai.com",
+    upi : "user@ybl"
  }
 
  let userTwo = userOne
