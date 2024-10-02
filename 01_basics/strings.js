@@ -1,0 +1,1 @@
+//strings can be denoted by single qoute or double quote
