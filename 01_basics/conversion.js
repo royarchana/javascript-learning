@@ -29,3 +29,29 @@ console.log(boolvalue)
  let str = String(num)
  console.log(str)
  console.log(typeof str)
+
+ //************************* OPERATION ************************//
+
+let Value = 3
+let negValue = -Value
+console.log(negValue)
+
+console.log(2+2)
+console.log(2-2)
+console.log(2*2)
+console.log(2**3)
+console.log(2/3)
+console.log(2%3)
+
+let str1 = "hello"
+let str2 = " archana"
+
+console.log(str1+str2)
+
+console.log("1"+ 2)     // => 12
+console.log(1 + "2")    // => 12
+console.log("1"+ 2 + 2) // => 122
+console.log(1 + 2 +"2") // => 32
+
+console.log(true)
+
