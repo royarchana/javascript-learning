@@ -108,11 +108,11 @@ console.log(instructor);
 
 //json
 
-{
-    "name":"archana",
-    "coursename":"js in hindi",
-    "price" : "free"
-}
+// {
+//     "name":"archana",
+//     "coursename":"js in hindi",
+//     "price" : "free"
+// }
 
 // when API call from json -> convert in into object and fetch the value
 
