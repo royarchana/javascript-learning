@@ -50,4 +50,6 @@ console.log(addTwo(3,4))
 const addTwo =(num1,num2) =>  ({username : "archana"})
 
 console.log(addTwo(3,4))
+// in arrow function ... if we open scope then we have to return the value 
+// and if not then u can normally write .. and it works
 
