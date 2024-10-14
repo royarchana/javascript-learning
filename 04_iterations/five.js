@@ -1,4 +1,4 @@
-/*const coding =["js","ruby","java","python","cpp"]
+const coding =["js","ruby","java","python","cpp"]
 
 const values = coding.forEach(  (item)=>{
     console.log(item)
@@ -22,7 +22,7 @@ myNums.forEach( (num)=>{
 } )
 console.log(ans);
 console.log(ans1);
-*/
+
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
