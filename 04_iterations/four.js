@@ -65,5 +65,5 @@ mycoding.forEach( (item) =>{
 })
 
 mycoding.forEach( (item) =>{
-    //console.log(item.languageName);
+    console.log(item.languageName);
 })
