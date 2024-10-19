@@ -1,0 +1,74 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style> 
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class ="bg-black">
+    <div >
+        <h1 id="title" class ="heading">DOM learning
+            <span style="display:none;">test text</span>
+        </h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <input type="password" name="" id="">
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+
+
+    </div>
+    <style> 
+        .parent{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+    
+</body>
+<script>
+    const myVal= document.querySelector('.parent')
+    // console.log(myVal); 
+    // console.log(myVal.children) // day
+    // console.log(myVal.children[1].innerHTML)// monday
+
+    // for (let i = 0; i < myVal.children.length; i++) {
+    //     console.log(myVal.children[i].innerHTML); // Monady ,Tuesday , Wednesday,Thursday    
+    // }
+
+    myVal.children[1].style.color ="orange"// changes the color to orange of Tuesday
+    // console.log(myVal.firstElementChild);// Monday
+    // console.log(myVal.lastElementChild);// Thursday
+
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);// monday
+    // console.log(dayOne.parentElement); // parent
+    // console.log(dayOne.nextElementSibling); // next element
+
+    console.log("NODES: ",myVal.childNodes);// complex tree structure
+    // nodelist -> har ek element me child node hota h -> see on MDN
+
+
+    // const myarr = Array.from(myVal) // changes myval to array
+    // console.log(myarr);
+</script>
+</html>
