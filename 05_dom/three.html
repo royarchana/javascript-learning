@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style= "background-color: #212121;color: #fff;" >
+    <ul class ="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    // to add list item-> using function 
+    function addLanguage(langName){
+        // here there was a huge traversal through tree
+        const li = document.createElement('li');
+        li.innerHTML =`${langName}`
+        const list = document.querySelector('.language');
+        list.appendChild(li);
+    }
+    addLanguage("python")
+    addLanguage("c++")
+
+    //optimize approach
+    function addOptiLanguage(langName){
+        // const li = document.createElement('li');
+        // const addText = document.createTextNode(langName);
+        // li.appendChild(addText)
+        //or
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addOptiLanguage('golang')
+
+    // Edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML ="Mojo"// 1st  approachnot an optimize approach
+    const newli = document.createElement('li')// 2nd approch
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
+// 3rd approach
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML ='<li>TypeScript</li>'
+
+    // remove
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+
+</script>
+</html>
+
